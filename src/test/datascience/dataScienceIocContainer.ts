@@ -84,7 +84,14 @@ import { IDotNetCompatibilityService } from '../../client/common/dotnet/types';
 import { ExperimentsManager } from '../../client/common/experiments';
 import { InstallationChannelManager } from '../../client/common/installer/channelManager';
 import { ProductInstaller } from '../../client/common/installer/productInstaller';
-import { CTagsProductPathService, DataScienceProductPathService, FormatterProductPathService, LinterProductPathService, RefactoringLibraryProductPathService, TestFrameworkProductPathService } from '../../client/common/installer/productPath';
+import {
+    CTagsProductPathService,
+    DataScienceProductPathService,
+    FormatterProductPathService,
+    LinterProductPathService,
+    RefactoringLibraryProductPathService,
+    TestFrameworkProductPathService
+} from '../../client/common/installer/productPath';
 import { ProductService } from '../../client/common/installer/productService';
 import { IInstallationChannelManager, IProductPathService, IProductService } from '../../client/common/installer/types';
 import { Logger } from '../../client/common/logger';
@@ -92,7 +99,7 @@ import { PersistentStateFactory } from '../../client/common/persistentState';
 import { IS_WINDOWS } from '../../client/common/platform/constants';
 import { PathUtils } from '../../client/common/platform/pathUtils';
 import { RegistryImplementation } from '../../client/common/platform/registry';
-import { IPlatformService, IRegistry } from '../../client/common/platform/types';
+import { IRegistry } from '../../client/common/platform/types';
 import { CurrentProcess } from '../../client/common/process/currentProcess';
 import { BufferDecoder } from '../../client/common/process/decoder';
 import { ProcessLogger } from '../../client/common/process/logger';
