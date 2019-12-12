@@ -703,9 +703,7 @@ export class DataScienceIocContainer extends UnitTestIocContainer {
             this.serviceManager.addSingleton<IProcessLogger>(IProcessLogger, ProcessLogger);
         }
 
-        if (this.serviceManager.get<IPlatformService>(IPlatformService).isWindows) {
-            this.serviceManager.addSingleton<IRegistry>(IRegistry, RegistryImplementation);
-        }
+        this.serviceManager.addSingleton<IRegistry>(IRegistry, RegistryImplementation);
 
         const dummyDisposable = {
             dispose: () => { return; }
